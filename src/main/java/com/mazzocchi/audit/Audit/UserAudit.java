@@ -40,10 +40,16 @@ public class UserAudit {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "id_operation")
-    private int operation;
 
     @Column(name = "date")
     private Date date;
+
+
+    // id_operation refers  to  the  id  of  the  operation  performed  on  the  database  (insert,  update,  delete)
+    @Column(name = "id_operation")
+    private int idOperation;
+
+
+
 
 }
