@@ -1,8 +1,8 @@
-package com.mazzocchi.audit.Audit;
+package com.mazzocchi.audit.Operation;
 
+import com.mazzocchi.audit.Operation.*;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.javapoet.*;
 
 @Data
 @Entity
@@ -10,7 +10,7 @@ import org.springframework.javapoet.*;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "operations")
+@Table(name = "operation")
 public class Operation {
     /// This class is used to store the operations that are performed on the database, such as insert, update and delete operations on the User table and its fields
 
@@ -22,4 +22,5 @@ public class Operation {
     @Enumerated(EnumType.STRING)
     @Column(length = 60)
     private OperationName operationName;
+
 }

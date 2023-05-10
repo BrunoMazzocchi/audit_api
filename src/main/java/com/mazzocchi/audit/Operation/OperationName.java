@@ -1,4 +1,4 @@
-package com.mazzocchi.audit.Audit;
+package com.mazzocchi.audit.Operation;
 
 public enum OperationName {
     INSERT,
