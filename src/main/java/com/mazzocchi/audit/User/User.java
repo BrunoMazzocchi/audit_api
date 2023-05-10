@@ -5,10 +5,6 @@ import lombok.*;
 
 @Data
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
 @Table(name = "users", uniqueConstraints = { @UniqueConstraint(columnNames = { "email" }) })
 public class User {
     /// User model class that receives data from the database
