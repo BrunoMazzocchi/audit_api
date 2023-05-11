@@ -2,11 +2,16 @@ package com.mazzocchi.audit.User;
 
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
+import com.mazzocchi.audit.Audit.*;
+
+import java.util.Optional;
 
 @Service
 public class UserService {
     @Autowired
     UserRepository userRepository;
+    private int idUserAudit;
+    private UserAudit userAudit;
 
     public User save(User user) {
         return userRepository.save(user);
@@ -28,5 +33,7 @@ public class UserService {
         return userRepository.findByUsername(username).orElse(null);
     }
 
-
+    public User update(int idUserAudit, User user) {
+        return user;
+    }
 }

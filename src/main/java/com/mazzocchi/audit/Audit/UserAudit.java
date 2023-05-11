@@ -40,7 +40,6 @@ public class UserAudit {
     @Column(name = "email")
     private String email;
 
-
     @Column(name = "date")
     private Date date;
 
